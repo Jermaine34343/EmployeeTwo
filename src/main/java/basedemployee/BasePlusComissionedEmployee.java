@@ -1,7 +1,8 @@
 package basedemployee;
 
 
-    public class BasePlusComissionedEmployee extends CommissionedEmployee {
+    public class BasePlusComissionedEmployee extends CommissionedEmployee{
+
 
         public double basedSalary;
 

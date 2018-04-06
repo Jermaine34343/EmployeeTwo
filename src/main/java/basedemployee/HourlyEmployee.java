@@ -84,5 +84,9 @@ package basedemployee;
 
         }
 
+        @Override
+        public double GetPaymentAmount() {
+            return 50;
+        }
     }
 

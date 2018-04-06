@@ -40,7 +40,7 @@ public class CommissionedEmployee extends Employee {
 
     String socialSecurityNumber() {
 
-        return "xxx-xx-2322";
+        return "8776782322";
 
     }
 
@@ -65,4 +65,8 @@ public class CommissionedEmployee extends Employee {
 
     }
 
+    @Override
+    public double GetPaymentAmount() {
+        return 304;
+    }
 }

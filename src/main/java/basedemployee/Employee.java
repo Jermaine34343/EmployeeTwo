@@ -1,6 +1,6 @@
 package basedemployee;
 
-public abstract class Employee {
+public abstract class Employee implements IPayAble {
 
     private static int count = 0;
 
@@ -12,7 +12,7 @@ public abstract class Employee {
 
 
 
-    public Employee(String firstName, String lastName, String socialSecurityNumber) {
+    Employee(String firstName, String lastName, String socialSecurityNumber) {
 
         this.firstName = firstName;
 
@@ -82,8 +82,6 @@ public abstract class Employee {
 
 
     public abstract double earningMethod();
-
-
 
     public static int getCount() {
 

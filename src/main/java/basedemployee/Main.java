@@ -4,7 +4,7 @@ public class Main {
 
         public static void main(String[] args) {
 
-            HourlyEmployee employeeOne = new HourlyEmployee("Wipler","CoCo","789546543",7.25,8);
+            HourlyEmployee employeeOne = new HourlyEmployee("Wipler","CoCo","789546543",7.25,9);
             System.out.println(employeeOne);
 
             SaleriedEmployee employeeTwo = new SaleriedEmployee("Jockel","Mobby","987654345",9087);
@@ -24,7 +24,7 @@ public class Main {
 
             for(Employee employee : employees ){
 
-                System.out.println(employee.earningMethod());
+                System.out.println("Hr owes " + employee.GetPaymentAmount());
 
             }
 

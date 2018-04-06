@@ -60,4 +60,8 @@ public class SaleriedEmployee extends Employee {
 
         }
 
+    @Override
+    public double GetPaymentAmount() {
+        return 90;
     }
+}
