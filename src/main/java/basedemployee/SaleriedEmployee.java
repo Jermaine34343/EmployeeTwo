@@ -14,14 +14,7 @@ public class SaleriedEmployee extends Employee {
 
             this.weeklySalary = weeklySalary;
 
-
-
         }
-
-
-
-
-
 
 
         @Override
@@ -62,6 +55,6 @@ public class SaleriedEmployee extends Employee {
 
     @Override
     public double GetPaymentAmount() {
-        return 90;
+        return earningMethod();
     }
 }

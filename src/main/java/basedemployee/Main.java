@@ -1,5 +1,7 @@
 package basedemployee;
 
+import java.sql.SQLOutput;
+
 public class Main {
 
         public static void main(String[] args) {
@@ -16,15 +18,14 @@ public class Main {
 
             BasePlusComissionedEmployee employeeFour = new BasePlusComissionedEmployee("John","Wackol","768987534",900,8000,0.70);
             System.out.println(employeeFour);
-
-
             Employee[] employees = new Employee[] {employeeOne, employeeTwo, employeeThree, employeeFour};
 
 
 
             for(Employee employee : employees ){
-
-                System.out.println("Hr owes " + employee.GetPaymentAmount());
+                System.out.println("===============================================================================");
+                System.out.println("Employee has " + employee.earningMethod() + " Hr owes " + employee.GetPaymentAmount() );
+                Invoice inv = new Invoice("8764345678", "RAM", 8, 34);
 
             }
 

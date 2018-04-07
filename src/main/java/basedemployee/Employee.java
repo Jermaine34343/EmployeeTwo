@@ -89,5 +89,10 @@ public abstract class Employee implements IPayAble {
 
     }
 
+    public double GetPaymentAmount(){
+        return 394;
+    }
+
+
 
 }

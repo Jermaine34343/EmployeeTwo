@@ -1,7 +1,7 @@
 package basedemployee;
 
 
-    public class BasePlusComissionedEmployee extends CommissionedEmployee{
+    public class BasePlusComissionedEmployee extends CommissionedEmployee {
 
 
         public double basedSalary;
@@ -64,7 +64,13 @@ package basedemployee;
                     ", commission=" + commissionRate +
 
                     '}';
-
         }
+
+        @Override
+        public double GetPaymentAmount(){
+
+            return super.GetPaymentAmount() + basedSalary;
+        }
+
 
     }

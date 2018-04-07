@@ -67,6 +67,6 @@ public class CommissionedEmployee extends Employee {
 
     @Override
     public double GetPaymentAmount() {
-        return 304;
+        return earningMethod();
     }
 }
